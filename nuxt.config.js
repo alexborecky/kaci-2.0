@@ -28,6 +28,7 @@ export default {
     '~/assets/scss/_typography.scss',
     '~/assets/scss/_layouts.scss',
     '~/assets/scss/_transitions.scss',
+    '~/assets/scss/_hooper.scss',
   ],
   /*
   ** Plugins to load before mounting the App
