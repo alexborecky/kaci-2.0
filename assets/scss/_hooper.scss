@@ -20,7 +20,7 @@
   }
   .hooper-pagination {
     position: absolute;
-    bottom: 40px;
+    bottom: 40px !important;
     right: 50%;
     transform: translateX(50%);
     display: flex;
