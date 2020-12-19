@@ -50,7 +50,7 @@ import 'hooper/dist/hooper.css';
                     wheelControl: false,
                     autoPlay: true,
                     playSpeed: 4000,
-                    transition: 600,
+                    transition: 1200,
                 }
             }
         }
