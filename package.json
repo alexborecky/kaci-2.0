@@ -11,8 +11,10 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "gsap": "^3.5.1",
     "hooper": "^0.3.4",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "vue-fullpage.js": "^0.1.6"
   },
   "devDependencies": {
     "@nuxtjs/style-resources": "^1.0.0",

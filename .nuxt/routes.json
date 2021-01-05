@@ -1,5 +1,19 @@
 [
   {
+    "name": "o-mne",
+    "path": "/o-mne",
+    "component": "/Users/alexandrborecky/Documents/Personal/kaci-photo-2/pages/o-mne/index.vue",
+    "chunkName": "pages/o-mne/index",
+    "_name": "_8c42d1a4"
+  },
+  {
+    "name": "test-page",
+    "path": "/test-page",
+    "component": "/Users/alexandrborecky/Documents/Personal/kaci-photo-2/pages/test-page/index.vue",
+    "chunkName": "pages/test-page/index",
+    "_name": "_accecbdc"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/Users/alexandrborecky/Documents/Personal/kaci-photo-2/pages/index.vue",

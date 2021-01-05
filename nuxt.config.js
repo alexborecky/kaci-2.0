@@ -17,6 +17,9 @@ export default {
 
     ]
   },
+  pageTransition: {
+    name: 'slide-bottom',
+  },
   /*
   ** Customize the progress-bar color
   */
@@ -29,12 +32,14 @@ export default {
     '~/assets/scss/_layouts.scss',
     '~/assets/scss/_transitions.scss',
     '~/assets/scss/_hooper.scss',
+    '~/assets/animations/_animate.scss',
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/uiKit.js'
+    '~/plugins/uiKit.js',
+    // { src: '~/plugins/fullpage', mode: 'client' }
   ],
   /*
   ** Nuxt.js dev-modules
