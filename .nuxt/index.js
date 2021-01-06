@@ -13,6 +13,7 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 /* Plugins */
 
 import nuxt_plugin_uiKit_b530b6ea from 'nuxt_plugin_uiKit_b530b6ea' // Source: ../plugins/uiKit.js (mode: 'all')
+import nuxt_plugin_vueagile_6bd42cd0 from 'nuxt_plugin_vueagile_6bd42cd0' // Source: ../plugins/vue-agile.js (mode: 'client')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -48,7 +49,7 @@ Object.defineProperty(Vue.prototype, '$nuxt', {
 
 Vue.use(Meta, {"keyName":"head","attribute":"data-n-head","ssrAttribute":"data-n-head-ssr","tagIDKeyName":"hid"})
 
-const defaultTransition = {"name":"slide-bottom","mode":"out-in","appear":false,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
+const defaultTransition = {"name":"page","mode":"out-in","appear":false,"appearClass":"appear","appearActiveClass":"appear-active","appearToClass":"appear-to"}
 
 async function createApp(ssrContext, config = {}) {
   const router = await createRouter(ssrContext)
@@ -174,6 +175,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_uiKit_b530b6ea === 'function') {
     await nuxt_plugin_uiKit_b530b6ea(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_vueagile_6bd42cd0 === 'function') {
+    await nuxt_plugin_vueagile_6bd42cd0(app.context, inject)
   }
 
   // Lock enablePreview in context

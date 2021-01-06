@@ -17,9 +17,9 @@ export default {
 
     ]
   },
-  pageTransition: {
-    name: 'slide-bottom',
-  },
+  // pageTransition: {
+  //   name: 'slide-bottom',
+  // },
   /*
   ** Customize the progress-bar color
   */
@@ -56,6 +56,7 @@ export default {
   ** Build configuration
   */
   build: {
+    transpile: ['vue-agile'],
     /*
     ** You can extend webpack config here
     */
