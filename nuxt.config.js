@@ -33,6 +33,7 @@ export default {
     '~/assets/scss/_transitions.scss',
     '~/assets/scss/_hooper.scss',
     '~/assets/animations/_animate.scss',
+    '~/assets/scss/_agile.scss',
   ],
   /*
   ** Plugins to load before mounting the App
