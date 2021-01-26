@@ -31,21 +31,21 @@
         >
             <div class="slide">
                 <HeaderImage
-                    title="Lidé"
+                    title=""
                     link="/"
                     image="https://ik.imagekit.io/alexborecky/Kaci/lide/people38_7F01bifHqqWK.jpg"
                 />
             </div>
             <div class="slide">
                 <HeaderImage
-                    title="Akce"
-                    link="/"
-                    image="https://ik.imagekit.io/alexborecky/Kaci/letna_2/letna-two31_H7OANpZmKm.jpg"
+                    title="Svatby"
+                    link="/svatby"
+                    image="https://ik.imagekit.io/alexborecky/Kaci/New_Web/tr:w-1920/full-616_7f3ljl5UE.jpg"
                 />
             </div>
             <div class="slide">
                 <HeaderImage
-                    title="Místa"
+                    title="Terapie focením"
                     link="/"
                     image="https://ik.imagekit.io/alexborecky/Kaci/Neapol/neapol27_wCKBVUD-eb.jpg"
                 />

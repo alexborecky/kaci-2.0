@@ -7,6 +7,13 @@
     "_name": "_8c42d1a4"
   },
   {
+    "name": "svatby",
+    "path": "/svatby",
+    "component": "/Users/alexandrborecky/Documents/Personal/kaci-photo-2/pages/svatby/index.vue",
+    "chunkName": "pages/svatby/index",
+    "_name": "_1af23e1b"
+  },
+  {
     "name": "test-page",
     "path": "/test-page",
     "component": "/Users/alexandrborecky/Documents/Personal/kaci-photo-2/pages/test-page/index.vue",

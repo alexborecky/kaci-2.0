@@ -17,9 +17,9 @@ export default {
 
     ]
   },
-  // pageTransition: {
-  //   name: 'slide-bottom',
-  // },
+  pageTransition: {
+    name: 'slide-bottom',
+  },
   /*
   ** Customize the progress-bar color
   */
