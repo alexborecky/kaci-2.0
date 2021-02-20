@@ -4,6 +4,7 @@ import { normalizeURL, decode } from '@nuxt/ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
+const _714ecd4a = () => interopDefault(import('../pages/gallery-test/index.vue' /* webpackChunkName: "pages/gallery-test/index" */))
 const _8c42d1a4 = () => interopDefault(import('../pages/o-mne/index.vue' /* webpackChunkName: "pages/o-mne/index" */))
 const _1af23e1b = () => interopDefault(import('../pages/svatby/index.vue' /* webpackChunkName: "pages/svatby/index" */))
 const _accecbdc = () => interopDefault(import('../pages/test-page/index.vue' /* webpackChunkName: "pages/test-page/index" */))
@@ -26,6 +27,10 @@ export const routerOptions = {
   scrollBehavior,
 
   routes: [{
+    path: "/gallery-test",
+    component: _714ecd4a,
+    name: "gallery-test"
+  }, {
     path: "/o-mne",
     component: _8c42d1a4,
     name: "o-mne"

@@ -1,5 +1,12 @@
 [
   {
+    "name": "gallery-test",
+    "path": "/gallery-test",
+    "component": "/Users/alexandrborecky/Documents/Personal/kaci-photo-2/pages/gallery-test/index.vue",
+    "chunkName": "pages/gallery-test/index",
+    "_name": "_714ecd4a"
+  },
+  {
     "name": "o-mne",
     "path": "/o-mne",
     "component": "/Users/alexandrborecky/Documents/Personal/kaci-photo-2/pages/o-mne/index.vue",

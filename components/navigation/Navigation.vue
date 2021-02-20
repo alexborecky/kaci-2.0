@@ -1,9 +1,6 @@
 <template>
-    <div class="navigation full-width transition" :class="{'colorNav' : $route.path == '/', 'hidden-navbar': !showNavbar, scrolled: !scrolledNav}">
+    <div class="navigation full-width transition" :class="{'hidden-navbar': !showNavbar, scrolled: !scrolledNav}">
         <div class="container flex">
-            <ul class="flex center">
-                <li><nuxt-link to="/">Fotografie</nuxt-link></li>
-                <li><nuxt-link to="/reference">Reference</nuxt-link></li>
             <nuxt-link to="/" class="logo">
                 <div>
                     <svg width="156" height="23" viewBox="0 0 156 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -11,6 +8,9 @@
                     </svg>
                 </div>
             </nuxt-link>
+            <ul class="flex center">
+                <li><nuxt-link to="/">Fotografie</nuxt-link></li>
+                <li><nuxt-link to="/reference">Reference</nuxt-link></li>
                 <li><nuxt-link to="/o-mne">O mně</nuxt-link></li>
                 <li><nuxt-link to="/kontakt">Kontakt</nuxt-link></li>
                 <!-- <li><nuxt-link to="/test-page">Test</nuxt-link></li> -->
@@ -67,13 +67,12 @@ const OFFSET = 60
     position: fixed;
     height: 80px;
     z-index: 100;
-    top: 0;
+    top: 40px;
     .container {
         height: 100%;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         .logo {
-            margin: 0 80px ;
             svg {
                 path {
                     fill: black;
@@ -85,7 +84,7 @@ const OFFSET = 60
             padding-left: 0;
             li {
                 list-style: none;
-                margin: 0 24px;
+                margin: 0 0 0 56px;
                 a {
                     color: black;
                 }

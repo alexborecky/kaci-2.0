@@ -1,53 +1,79 @@
 <template>
     <div class="hero">
-        <div class="container flex center">
-            <h2>Hello</h2>
-        </div>
-        <agile
-            :fade="true"
-            :speed="1000"
-        >
-            <div class="slide">
-                Test slide 01
-            </div>
-            <div class="slide">
-                Test slide 02
-            </div>
-        </agile>
+        <LocomotiveScroll
+                ref="scroller"
+                :getted-options="{
+                smooth: true,
+                direction: 'horizontal',
+                smartphone: {
+                    smooth: true,
+                    direction: 'horizontal',
+                },
+                tablet: {
+                    smooth: true,
+                    direction: 'horizontal',
+                },
+                }"
+            >
+            <div class="example horizontal">
+                <header data-scroll-section>
+                    <h1>
+                    Horizontal<br />
+                    Scroll
+                    </h1>
+                </header>
+                <div class="example-section" data-scroll-section>
+                    <div class="example-content">
+                    <div
+                        class="example-big-square"
+                        data-scroll
+                        data-scroll-speed="-0.5"
+                    />
+                    <div class="example-small-square" data-scroll data-scroll-speed="5" />
+                    </div>
+                </div>
+                <div class="example-section" data-scroll-section>
+                    <div class="example-content">
+                    <div
+                        class="example-big-square"
+                        data-scroll
+                        data-scroll-speed="-0.5"
+                    />
+                    <div class="example-small-square" data-scroll data-scroll-speed="2" />
+                    </div>
+                </div>
+                <div class="example-section" data-scroll-section>
+                    <div class="example-content">
+                    <div
+                        class="example-big-square"
+                        data-scroll
+                        data-scroll-speed="-0.5"
+                    />
+                    <div class="example-small-square" data-scroll data-scroll-speed="2" />
+                    </div>
+                </div>
+            </div> 
+        </LocomotiveScroll>
     </div>
 </template>
 
-<script>
-import { VueAgile } from 'vue-agile'
 
-    export default {
-         data() {
-            return {
-            }
-        },
-        components: {
-            agile: VueAgile
-        }
-    }
+<script>
+
+export default {
+    name: 'carousel',
+    components: {
+    },
+    data() {
+      return {
+      }
+    },
+  }
+
 </script>
 
 <style lang="scss" scoped>
-
-.hero {
-    background-color: green;
-}
-
-.container {
-    height: 100%;
-    background-color: red;
-}
-
-.agile {
-    height: 100vh;
-    .slide {
-        height: 100%;
-        background-color: blue;
-    }
-}
+  
+@import '@/assets/scss/demo.scss';
 
 </style>

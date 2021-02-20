@@ -14,7 +14,26 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { href: 'https://fonts.googleapis.com/css2?family=Italiana&family=Mulish:wght@300;400;600;700;800&display=swap' ,rel: 'stylesheet'}
-
+    ],
+    script: [
+      {
+        src: "http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2",
+        type: "text/javascript"
+      },
+      {
+        src: "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+        type: "text/javascript"
+      },
+      {
+        src:
+          "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js",
+        type: "text/javascript"
+      },
+      {
+        src:
+          "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js",
+        type: "text/javascript"
+      }
     ]
   },
   pageTransition: {
@@ -34,13 +53,17 @@ export default {
     '~/assets/scss/_hooper.scss',
     '~/assets/animations/_animate.scss',
     '~/assets/scss/_agile.scss',
+    '~/assets/scss/demo.scss',
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
     '~/plugins/uiKit.js',
-    // { src: '~/plugins/fullpage', mode: 'client' }
+    // { src: '~/plugins/locomotive.js', ssr: false },
+    { src: '~/plugins/both.js' },
+    { src: '~/plugins/client.js', mode: 'client' },
+    { src: '~/plugins/server.js', mode: 'server' },
   ],
   /*
   ** Nuxt.js dev-modules
