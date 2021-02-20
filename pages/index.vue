@@ -19,48 +19,28 @@
                     <div class="slider example horizontal">
                         <div class="example-section first-section" data-scroll-section>
                             <div class="slide-container flex">
-                            <GalleryComponent
-                                data-scroll
-                                data-scroll-speed="1"
-                            />
-                            <GalleryComponent
-                                data-scroll
-                                data-scroll-speed="1"
-                            />
-                            <GalleryComponent
-                                data-scroll
-                                data-scroll-speed="1"
-                            />
-                            <GalleryComponent
-                                data-scroll
-                                data-scroll-speed="1"
-                            />
-                            <GalleryComponent
-                                data-scroll
-                                data-scroll-speed="1"
-                            />
+                                <GalleryComponent
+                                    data-scroll
+                                    data-scroll-speed="1"
+                                />
                             </div>
                         </div>
-                        <!-- <div class="example-section" data-scroll-section>
-                            <div class="example-content">
-                            <div
-                                class="example-big-square"
-                                data-scroll
-                                data-scroll-speed="-0.5"
-                            />
-                            <div class="example-small-square" data-scroll data-scroll-speed="2" />
+                        <div class="example-section first-section" data-scroll-section>
+                            <div class="slide-container flex">
+                                <GalleryComponent
+                                    data-scroll
+                                    data-scroll-speed="1"
+                                />
                             </div>
                         </div>
-                        <div class="example-section" data-scroll-section>
-                            <div class="example-content">
-                            <div
-                                class="example-big-square"
-                                data-scroll
-                                data-scroll-speed="-0.5"
-                            />
-                            <div class="example-small-square" data-scroll data-scroll-speed="2" />
+                        <div class="example-section first-section" data-scroll-section>
+                            <div class="slide-container flex">
+                                <GalleryComponent
+                                    data-scroll
+                                    data-scroll-speed="1"
+                                />
                             </div>
-                        </div> -->
+                        </div>
                     </div> 
                 </LocomotiveScroll>
         </div>
