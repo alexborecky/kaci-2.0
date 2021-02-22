@@ -1,5 +1,5 @@
 <template>
-    <div class="navigation full-width transition" :class="{'hidden-navbar': !showNavbar, scrolled: !scrolledNav}">
+    <div class="navigation full-width transition" :class="{'hidden-navbar': !showNavbar, colour: !transparent, scrolled: !scrolledNav}">
         <div class="container flex">
             <nuxt-link to="/" class="logo">
                 <div>
@@ -9,17 +9,23 @@
                 </div>
             </nuxt-link>
             <ul class="flex center">
-                <li><nuxt-link to="/">Fotografie</nuxt-link></li>
-                <li><nuxt-link to="/reference">Reference</nuxt-link></li>
-                <li><nuxt-link to="/o-mne">O mně</nuxt-link></li>
-                <li><nuxt-link to="/kontakt">Kontakt</nuxt-link></li>
-                <!-- <li><nuxt-link to="/test-page">Test</nuxt-link></li> -->
+                <li
+                    v-for="item in items" 
+                    :key="item.link"
+                >
+                    <nuxt-link 
+                        :to="item.link">
+                        {{item.title}}
+                        <div class="underline"></div>
+                    </nuxt-link>
+                </li>
             </ul>
         </div>
     </div>
 </template>
 
 <script>
+import items from '@/assets/data/navigation.js'
 const OFFSET = 60
     export default {
         name: 'Navigation',
@@ -29,7 +35,9 @@ const OFFSET = 60
                 showNavbar: true,
                 scrolledNav: true,
                 lastScrollPosition: 0,
-                scrollValue: 0
+                scrollValue: 0,
+                transparent: false,
+                items: items
             }
         },
         mounted () {
@@ -55,6 +63,7 @@ const OFFSET = 60
             }
             this.showNavbar = window.pageYOffset < this.lastScrollPosition
             this.scrolledNav = window.pageYOffset < this.lastScrollPosition
+            this.transparent = window.pageYOffset > 400
             this.lastScrollPosition = window.pageYOffset
             }
         }
@@ -66,8 +75,9 @@ const OFFSET = 60
 .navigation {
     position: fixed;
     height: 80px;
-    z-index: 100;
+    z-index: 1000 !important;
     top: 40px;
+    background-color: white;
     .container {
         height: 100%;
         align-items: center;
@@ -90,6 +100,9 @@ const OFFSET = 60
                 }
             }
         }
+    }
+    @media only screen and (max-width: 960px) {
+        display: none;
     }
 }
 
@@ -114,6 +127,10 @@ const OFFSET = 60
 
 a.nuxt-link-exact-active {
     font-weight: 800;
+}
+
+.colour {
+    background-color: transparent;
 }
 
 .navigation.hidden-navbar {

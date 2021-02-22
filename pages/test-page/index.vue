@@ -74,6 +74,6 @@ export default {
 
 <style lang="scss" scoped>
   
-@import '@/assets/scss/demo.scss';
+@import '@/assets/scss/locomotive.scss';
 
 </style>

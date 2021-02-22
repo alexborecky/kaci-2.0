@@ -3,35 +3,30 @@
     "name": "gallery-test",
     "path": "/gallery-test",
     "component": "/Users/alexandrborecky/Documents/Personal/kaci-photo-2/pages/gallery-test/index.vue",
-    "chunkName": "pages/gallery-test/index",
-    "_name": "_714ecd4a"
+    "chunkName": "pages/gallery-test/index"
   },
   {
     "name": "o-mne",
     "path": "/o-mne",
     "component": "/Users/alexandrborecky/Documents/Personal/kaci-photo-2/pages/o-mne/index.vue",
-    "chunkName": "pages/o-mne/index",
-    "_name": "_8c42d1a4"
+    "chunkName": "pages/o-mne/index"
   },
   {
     "name": "svatby",
     "path": "/svatby",
     "component": "/Users/alexandrborecky/Documents/Personal/kaci-photo-2/pages/svatby/index.vue",
-    "chunkName": "pages/svatby/index",
-    "_name": "_1af23e1b"
+    "chunkName": "pages/svatby/index"
   },
   {
     "name": "test-page",
     "path": "/test-page",
     "component": "/Users/alexandrborecky/Documents/Personal/kaci-photo-2/pages/test-page/index.vue",
-    "chunkName": "pages/test-page/index",
-    "_name": "_accecbdc"
+    "chunkName": "pages/test-page/index"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/alexandrborecky/Documents/Personal/kaci-photo-2/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_5a948337"
+    "chunkName": "pages/index"
   }
 ]

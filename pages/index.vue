@@ -6,30 +6,26 @@
                 :getted-options="{
                 smooth: true,
                 direction: 'horizontal',
+                getDirection: true,
                 smartphone: {
-                    smooth: true,
-                    direction: 'horizontal',
+                    smooth: false,
+                    direction: 'vertical',
+                    gestureDirection: 'vertical',
                 },
                 tablet: {
                     smooth: true,
-                    direction: 'horizontal',
+                    direction: 'vertical',
+                    gestureDirection: 'vertical',
                 },
                 }"
             >
             <div class="example horizontal">
-                <!-- <header data-scroll-section>
-                    <h1>
-                    Horizontal<br />
-                    Scroll
-                    </h1>
-                </header> -->
                 <div class="example-section" data-scroll-section>
                     <div class="example-content">
                     <gallery-component
-                        data-scroll
-                        data-scroll-speed="-0.5"
-                    />
-                    <gallery-component
+                        image="https://ik.imagekit.io/alexborecky/Kaci/New_Web/full-616_7f3ljl5UE.jpg"
+                        link="/"
+                        title="Svatby"
                         data-scroll
                         data-scroll-speed="-0.5"
                     />
@@ -38,10 +34,9 @@
                 <div class="example-section" data-scroll-section>
                     <div class="example-content">
                     <gallery-component
-                        data-scroll
-                        data-scroll-speed="-0.5"
-                    />
-                    <gallery-component
+                        image="https://ik.imagekit.io/alexborecky/Kaci/New_Web/full-616_7f3ljl5UE.jpg"
+                        link="/"
+                        title="Svatby"
                         data-scroll
                         data-scroll-speed="-0.5"
                     />
@@ -50,10 +45,9 @@
                 <div class="example-section" data-scroll-section>
                     <div class="example-content">
                     <gallery-component
-                        data-scroll
-                        data-scroll-speed="-0.5"
-                    />
-                    <gallery-component
+                        image="https://ik.imagekit.io/alexborecky/Kaci/New_Web/full-616_7f3ljl5UE.jpg"
+                        link="/"
+                        title="Svatby"
                         data-scroll
                         data-scroll-speed="-0.5"
                     />
@@ -67,65 +61,34 @@
 
 <script>
 import GalleryComponent from '../components/GalleryComponent.vue'
-// import { 
-//     Hooper, 
-//     Slide,
-//     Navigation as HooperNavigation,
-//     Pagination as HooperPagination
-//      } from 'hooper';
-// import 'hooper/dist/hooper.css';
-// import { VueAgile } from 'vue-agile'
-// import Agile from 'vue-agile/src/Agile.vue';
 
     export default {
         components: {
-                GalleryComponent
-            // agile: VueAgile,
-            // Hooper,
-            // Slide,
-            // HooperNavigation,
-            // HooperPagination,
-
+            GalleryComponent
         },
         data () {
             return {
-                // hooperSettings: {
-                //     infiniteScroll: true,
-                //     wheelControl: false,
-                //     autoPlay: true,
-                //     playSpeed: 4000,
-                //     transition: 1200,
-                // }
+
             }
         },
-        mounted () {
-            // $(function() {
-            //     $("body").mousewheel(function(event, delta) {
-            //         this.scrollLeft -= (delta * 30);
-            //         event.preventDefault();
-            //     });
-            // });
-            // document.addEventListener('wheel', (e) => {
-            //     document.getElementById('scroll_container').scrollLeft += e.deltaY;
-            // })
-        }
+
     }
 </script>
 
 <style lang="scss" scoped>
 
-@import '@/assets/scss/demo.scss';
+@import '@/assets/scss/locomotive.scss';
 
 .hero {
     align-items: center;
     .container {
-        .slider {
-            .example-section {
-                display: flex;
-                align-items: center;
-            }
-        }
+        z-index: 0;
     }
+    @media only screen and (max-width: 640px) {
+        .js-locomotive {
+            margin-top: 80px;
+        }
+    }   
 }
 
 .container, .js-locomotive, .example, .horizontal {
