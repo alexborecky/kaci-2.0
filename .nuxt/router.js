@@ -7,6 +7,7 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _714ecd4a = () => interopDefault(import('../pages/gallery-test/index.vue' /* webpackChunkName: "pages/gallery-test/index" */))
 const _8c42d1a4 = () => interopDefault(import('../pages/o-mne/index.vue' /* webpackChunkName: "pages/o-mne/index" */))
 const _1af23e1b = () => interopDefault(import('../pages/svatby/index.vue' /* webpackChunkName: "pages/svatby/index" */))
+const _7494f20e = () => interopDefault(import('../pages/terapie-focenim/index.vue' /* webpackChunkName: "pages/terapie-focenim/index" */))
 const _accecbdc = () => interopDefault(import('../pages/test-page/index.vue' /* webpackChunkName: "pages/test-page/index" */))
 const _5a948337 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -38,6 +39,10 @@ export const routerOptions = {
     path: "/svatby",
     component: _1af23e1b,
     name: "svatby"
+  }, {
+    path: "/terapie-focenim",
+    component: _7494f20e,
+    name: "terapie-focenim"
   }, {
     path: "/test-page",
     component: _accecbdc,

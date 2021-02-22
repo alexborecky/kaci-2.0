@@ -11,6 +11,15 @@ $scroll-width: 200vw;
   }
 }
 
+.example.horizontal .example-section{
+  width: 30%;
+  @media only screen and (max-width: 640px) {
+    width: 100%;
+    transform: none !important;
+    height: 30%;
+  }
+}
+
 .example-content{
   display: flex;
   align-items: center;
@@ -22,15 +31,36 @@ $scroll-width: 200vw;
   }
 }
 
-.example.horizontal .example-section{
-  width: 30%;
+.gallery-scroll {
+  width: 1000vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
   @media only screen and (max-width: 640px) {
+    flex-flow: column;
+    height: 300vh;
     width: 100%;
-    transform: none !important;
-    height: 30%;
   }
 }
 
-.example.vertical .example-section, .example.vertical footer {
-  padding-top: 50vw;
+.gallery-content{
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+  @media only screen and (max-width: 640px) {
+    flex-flow: column;
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+.gallery-section{
+  height: 80%;
+  width: 100%;
+  @media only screen and (max-width: 640px) {
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+  }
 }

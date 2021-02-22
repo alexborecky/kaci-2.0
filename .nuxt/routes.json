@@ -3,30 +3,42 @@
     "name": "gallery-test",
     "path": "/gallery-test",
     "component": "/Users/alexandrborecky/Documents/Personal/kaci-photo-2/pages/gallery-test/index.vue",
-    "chunkName": "pages/gallery-test/index"
+    "chunkName": "pages/gallery-test/index",
+    "_name": "_714ecd4a"
   },
   {
     "name": "o-mne",
     "path": "/o-mne",
     "component": "/Users/alexandrborecky/Documents/Personal/kaci-photo-2/pages/o-mne/index.vue",
-    "chunkName": "pages/o-mne/index"
+    "chunkName": "pages/o-mne/index",
+    "_name": "_8c42d1a4"
   },
   {
     "name": "svatby",
     "path": "/svatby",
     "component": "/Users/alexandrborecky/Documents/Personal/kaci-photo-2/pages/svatby/index.vue",
-    "chunkName": "pages/svatby/index"
+    "chunkName": "pages/svatby/index",
+    "_name": "_1af23e1b"
+  },
+  {
+    "name": "terapie-focenim",
+    "path": "/terapie-focenim",
+    "component": "/Users/alexandrborecky/Documents/Personal/kaci-photo-2/pages/terapie-focenim/index.vue",
+    "chunkName": "pages/terapie-focenim/index",
+    "_name": "_7494f20e"
   },
   {
     "name": "test-page",
     "path": "/test-page",
     "component": "/Users/alexandrborecky/Documents/Personal/kaci-photo-2/pages/test-page/index.vue",
-    "chunkName": "pages/test-page/index"
+    "chunkName": "pages/test-page/index",
+    "_name": "_accecbdc"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/alexandrborecky/Documents/Personal/kaci-photo-2/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_5a948337"
   }
 ]
