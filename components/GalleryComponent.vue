@@ -14,15 +14,19 @@
 
 .gallery {
     height: 50vh;
-    max-width: 80%;
+    width: 400px;
     background-color: red;
     box-shadow: 0 32px 120px 0 rgba($color: #000000, $alpha: .4);
     z-index: 100;
     transform: none !important;
-    margin-right: 80px;
+    margin: 40px;
      img {
          height: 100%;
          width: auto;
+        //  @media only screen and (max-width: 650px) {
+        //      width: 100%;
+        //      height: auto;
+        //  }
      }
 }
 

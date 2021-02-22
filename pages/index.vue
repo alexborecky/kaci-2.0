@@ -2,54 +2,71 @@
     <div class="hero flex">
         <div class="container">
             <LocomotiveScroll
-                        ref="scroller"
-                        :getted-options="{
-                        smooth: true,
-                        direction: 'horizontal',
-                        smartphone: {
-                            smooth: true,
-                            direction: 'horizontal',
-                            gestureDirection: 'both',
-                            breakpoint: '450'
-                        },
-                        tablet: {
-                            smooth: true,
-                            direction: 'horizontal',
-                        },
-                        }"
-                    >
-                    <div class="slider example horizontal">
-                        <div class="example-section first-section" data-scroll-section>
-                            <div class="slide-container flex">
-                                <GalleryComponent
-                                    data-scroll
-                                    data-scroll-speed="1"
-                                />
-                            </div>
-                        </div>
-                        <div class="example-section first-section" data-scroll-section>
-                            <div class="slide-container flex">
-                                <GalleryComponent
-                                    data-scroll
-                                    data-scroll-speed="1"
-                                />
-                            </div>
-                        </div>
-                        <div class="example-section first-section" data-scroll-section>
-                            <div class="slide-container flex">
-                                <GalleryComponent
-                                    data-scroll
-                                    data-scroll-speed="1"
-                                />
-                            </div>
-                        </div>
-                    </div> 
-                </LocomotiveScroll>
+                ref="scroller"
+                :getted-options="{
+                smooth: true,
+                direction: 'horizontal',
+                smartphone: {
+                    smooth: true,
+                    direction: 'horizontal',
+                },
+                tablet: {
+                    smooth: true,
+                    direction: 'horizontal',
+                },
+                }"
+            >
+            <div class="example horizontal">
+                <!-- <header data-scroll-section>
+                    <h1>
+                    Horizontal<br />
+                    Scroll
+                    </h1>
+                </header> -->
+                <div class="example-section" data-scroll-section>
+                    <div class="example-content">
+                    <gallery-component
+                        data-scroll
+                        data-scroll-speed="-0.5"
+                    />
+                    <gallery-component
+                        data-scroll
+                        data-scroll-speed="-0.5"
+                    />
+                    </div>
+                </div>
+                <div class="example-section" data-scroll-section>
+                    <div class="example-content">
+                    <gallery-component
+                        data-scroll
+                        data-scroll-speed="-0.5"
+                    />
+                    <gallery-component
+                        data-scroll
+                        data-scroll-speed="-0.5"
+                    />
+                    </div>
+                </div>
+                <div class="example-section" data-scroll-section>
+                    <div class="example-content">
+                    <gallery-component
+                        data-scroll
+                        data-scroll-speed="-0.5"
+                    />
+                    <gallery-component
+                        data-scroll
+                        data-scroll-speed="-0.5"
+                    />
+                    </div>
+                </div>
+            </div> 
+        </LocomotiveScroll>
         </div>
     </div>
 </template>
 
 <script>
+import GalleryComponent from '../components/GalleryComponent.vue'
 // import { 
 //     Hooper, 
 //     Slide,
@@ -62,6 +79,7 @@
 
     export default {
         components: {
+                GalleryComponent
             // agile: VueAgile,
             // Hooper,
             // Slide,
@@ -95,6 +113,8 @@
 </script>
 
 <style lang="scss" scoped>
+
+@import '@/assets/scss/demo.scss';
 
 .hero {
     align-items: center;
