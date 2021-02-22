@@ -9,6 +9,8 @@
                         smartphone: {
                             smooth: true,
                             direction: 'horizontal',
+                            gestureDirection: 'both',
+                            breakpoint: '450'
                         },
                         tablet: {
                             smooth: true,
