@@ -41,6 +41,7 @@
             width: 50%;
             img {
                 width: 80%;
+                height: 100%;
             }
         }
         .content {
