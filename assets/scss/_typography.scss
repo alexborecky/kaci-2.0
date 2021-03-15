@@ -1,5 +1,5 @@
 * {
-    font-family: 'Mulish';
+    font-family: 'Raleway';
 }
 
 a {
@@ -7,13 +7,46 @@ a {
     color: black;
 }
 
+p {
+    color: rgba($color: #000000, $alpha: .8);
+    font-size: 16px;
+    line-height: 24px;
+}
+
 h1 {
-    font-family: 'Italiana';
-    font-size: 160px;
-    color: white;
-    letter-spacing: 5px;
+    font-family: 'Playfair Display';
+    font-size: 56px;
+    letter-spacing: 1px;
     font-weight: 400;
-    text-align: center;
+    font-weight: 600;
+    @media only screen and (max-width: 1280px) {
+        font-size: 40px;
+    }
+    @media only screen and (max-width: 680px) {
+        font-size: 32px;
+    }
+    @media only screen and (max-width: 450px) {
+        font-size: 24px;
+        letter-spacing: .64px;
+    }
+    @media only screen and (max-width: 350px) {
+        font-size: 22px;
+        letter-spacing: .4px;
+    }
+}
+
+h2 {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    font-size: 32px;
+    @media only screen and (max-width: 450px) {
+        font-size: 24px;
+        letter-spacing: .64px;
+    }
+    @media only screen and (max-width: 350px) {
+        font-size: 22px;
+        letter-spacing: .4px;
+    }
 }
 
 .gallery-link {

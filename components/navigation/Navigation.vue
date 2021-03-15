@@ -76,7 +76,7 @@ const OFFSET = 60
     position: fixed;
     height: 80px;
     z-index: 1000 !important;
-    top: 40px;
+    top: 2vh;
     background-color: white;
     .container {
         height: 100%;
@@ -84,8 +84,12 @@ const OFFSET = 60
         justify-content: space-between;
         .logo {
             svg {
+                transition: .2s ease-in-out;
                 path {
                     fill: black;
+                }
+                &:hover {
+                    opacity: .4;
                 }
             }
         }
@@ -96,7 +100,13 @@ const OFFSET = 60
                 list-style: none;
                 margin: 0 0 0 56px;
                 a {
-                    color: black;
+                    color: rgba($color: #000000, $alpha: .8);
+                    font-family: 'Raleway';
+                    transition: .2s ease-in-out;
+                    letter-spacing: .4px;
+                    &:hover {
+                        color: rgba($color: black, $alpha: .4);
+                    }
                 }
             }
         }
@@ -126,7 +136,8 @@ const OFFSET = 60
 }
 
 a.nuxt-link-exact-active {
-    font-weight: 800;
+    font-weight: 700 !important;
+    color: rgba($color: #000000, $alpha: 1.0);
 }
 
 .colour {

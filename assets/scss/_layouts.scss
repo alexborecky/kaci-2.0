@@ -7,6 +7,9 @@
     width: 80%;
     max-width: 1680px;
     margin: 0 auto;
+    @media only screen and (max-width: 680px) {
+        width: 90%;
+    }
 }
 
 .flex {
@@ -21,6 +24,11 @@
 .flex-right {
     justify-content: flex-end;
     align-items: center;
+}
+
+.flex-left {
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .column {

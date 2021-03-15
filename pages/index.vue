@@ -1,7 +1,17 @@
 <template>
     <div class="hero flex">
         <div class="container">
-            <LocomotiveScroll
+            <div class="galleries flex">
+                <gallery-component
+                        v-for="cat in cat.cover" :key="cat.src"
+                        :image="cat.src"
+                        :link="cat.link"
+                        :title="cat.title"
+                        data-scroll
+                        data-scroll-speed="1"
+                    />
+            </div>
+            <!-- <LocomotiveScroll
                 ref="scroller"
                 :getted-options="{
                 smooth: true,
@@ -25,14 +35,8 @@
                     data-scroll-section
                     v-for="cat in cat.cover" :key="cat.src"
                 >
-                    <gallery-component
-                        :image="cat.src"
-                        :link="cat.link"
-                        data-scroll
-                        data-scroll-speed="1"
-                    />
                 </div>
-                <!-- <div class="example-section" data-scroll-section>
+                <div class="example-section" data-scroll-section>
                     <div class="example-content">
                     <gallery-component
                         image="https://ik.imagekit.io/alexborecky/Kaci/New_Web/full-616_7f3ljl5UE.jpg"
@@ -53,9 +57,9 @@
                         data-scroll-speed="-0.5"
                     />
                     </div>
-                </div> -->
+                </div>
             </div> 
-        </LocomotiveScroll>
+        </LocomotiveScroll> -->
         </div>
     </div>
 </template>
@@ -97,6 +101,19 @@ import GalleryComponent from '../components/GalleryComponent.vue'
 
 .container, .js-locomotive, .example, .horizontal {
     overflow: visible;
+}
+
+.galleries {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @media only screen and (max-width: 800px) {
+        flex-flow: column;
+        margin-top: 40px;
+        &:last-child {
+                margin-bottom: 40px;
+            }
+    }
 }
 
 </style>

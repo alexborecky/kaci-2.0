@@ -53,6 +53,10 @@ import images from '@/assets/images/terapie.js'
 
 @import '@/assets/scss/locomotive.scss';
 
+.gallery-scroll {
+    width: 320vw;
+}
+
 .js-locomotive {
     position: realtive;
 }
