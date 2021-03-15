@@ -12,6 +12,8 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 
 /* Plugins */
 
+import nuxt_plugin_pluginclient_f88f4826 from 'nuxt_plugin_pluginclient_f88f4826' // Source: ./content/plugin.client.js (mode: 'client')
+import nuxt_plugin_pluginserver_2d1c6516 from 'nuxt_plugin_pluginserver_2d1c6516' // Source: ./content/plugin.server.js (mode: 'server')
 import nuxt_plugin_uiKit_b530b6ea from 'nuxt_plugin_uiKit_b530b6ea' // Source: ../plugins/uiKit.js (mode: 'all')
 import nuxt_plugin_both_2a2312c0 from 'nuxt_plugin_both_2a2312c0' // Source: ../plugins/both.js (mode: 'all')
 import nuxt_plugin_client_035ad0d4 from 'nuxt_plugin_client_035ad0d4' // Source: ../plugins/client.js (mode: 'client')
@@ -174,6 +176,14 @@ async function createApp(ssrContext, config = {}) {
     }
   }
   // Plugin execution
+
+  if (process.client && typeof nuxt_plugin_pluginclient_f88f4826 === 'function') {
+    await nuxt_plugin_pluginclient_f88f4826(app.context, inject)
+  }
+
+  if (process.server && typeof nuxt_plugin_pluginserver_2d1c6516 === 'function') {
+    await nuxt_plugin_pluginserver_2d1c6516(app.context, inject)
+  }
 
   if (typeof nuxt_plugin_uiKit_b530b6ea === 'function') {
     await nuxt_plugin_uiKit_b530b6ea(app.context, inject)

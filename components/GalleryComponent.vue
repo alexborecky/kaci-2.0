@@ -1,7 +1,7 @@
 <template>
     <nuxt-link :to="link" class="gallery flex column" >
         <div class="image" :style="{backgroundImage: 'url('+ image +')'}"></div>
-        <h2>{{title}}</h2>
+        <!-- <h2>{{title}}</h2> -->
     </nuxt-link>
 </template>
 
@@ -52,7 +52,7 @@
     }
     &:hover {
         .image {
-            transform: scale(.9) translateX(-5%);
+            transform: scale(1.02);
             img {
                 box-shadow: 0 64px 80px -40px rgba($color: #000000, $alpha: .4);
             }

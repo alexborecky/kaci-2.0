@@ -20,7 +20,19 @@
                 }"
             >
             <div class="example horizontal">
-                <div class="example-section" data-scroll-section>
+                <div 
+                    class="example-section" 
+                    data-scroll-section
+                    v-for="cat in cat.cover" :key="cat.src"
+                >
+                    <gallery-component
+                        :image="cat.src"
+                        :link="cat.link"
+                        data-scroll
+                        data-scroll-speed="1"
+                    />
+                </div>
+                <!-- <div class="example-section" data-scroll-section>
                     <div class="example-content">
                     <gallery-component
                         image="https://ik.imagekit.io/alexborecky/Kaci/New_Web/full-616_7f3ljl5UE.jpg"
@@ -41,18 +53,7 @@
                         data-scroll-speed="-0.5"
                     />
                     </div>
-                </div>
-                <div class="example-section" data-scroll-section>
-                    <div class="example-content">
-                    <gallery-component
-                        image="https://ik.imagekit.io/alexborecky/Kaci/New_Web/full-616_7f3ljl5UE.jpg"
-                        link="/"
-                        title="Svatby"
-                        data-scroll
-                        data-scroll-speed="-0.5"
-                    />
-                    </div>
-                </div>
+                </div> -->
             </div> 
         </LocomotiveScroll>
         </div>
@@ -61,8 +62,11 @@
 
 <script>
 import GalleryComponent from '../components/GalleryComponent.vue'
-
     export default {
+        async asyncData({$content}) {
+            const cat = await $content('categories').fetch();
+            return {cat}
+        },
         components: {
             GalleryComponent
         },
