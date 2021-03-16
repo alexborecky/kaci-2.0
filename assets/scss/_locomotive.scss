@@ -40,7 +40,7 @@ $scroll-width: 80vw;
   @media only screen and (max-width: 640px) {
     flex-flow: column;
     height: 300vh;
-    width: 100%;
+    width: 100% !important;
   }
 }
 
