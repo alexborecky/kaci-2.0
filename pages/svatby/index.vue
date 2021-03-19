@@ -14,8 +14,9 @@
                 },
                 tablet: {
                     smooth: true,
-                    direction: 'vertical',
-                    gestureDirection: 'vertical',
+                    direction: 'horizontal',
+                    gestureDirection: 'horizontal',
+                    breakpoint: '1200'
                 },
                 }"
             >
@@ -55,6 +56,12 @@ import images from '@/assets/images/svatby.js'
 
 .gallery-scroll {
     width: 320vw;
+    @media only screen and (max-width: 1440px) {
+        width: 440vh;
+    }
+    @media only screen and (max-width: 640px) {
+        height: 300vh;
+    }
 }
 
 .js-locomotive {

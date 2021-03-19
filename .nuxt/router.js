@@ -7,6 +7,7 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _018134c4 = () => interopDefault(import('../pages/fotografie/index.vue' /* webpackChunkName: "pages/fotografie/index" */))
 const _6a09c208 = () => interopDefault(import('../pages/kontakt/index.vue' /* webpackChunkName: "pages/kontakt/index" */))
 const _8c42d1a4 = () => interopDefault(import('../pages/o-mne/index.vue' /* webpackChunkName: "pages/o-mne/index" */))
+const _3f944933 = () => interopDefault(import('../pages/reference/index.vue' /* webpackChunkName: "pages/reference/index" */))
 const _1af23e1b = () => interopDefault(import('../pages/svatby/index.vue' /* webpackChunkName: "pages/svatby/index" */))
 const _7494f20e = () => interopDefault(import('../pages/terapie-focenim/index.vue' /* webpackChunkName: "pages/terapie-focenim/index" */))
 const _5a948337 = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
@@ -39,6 +40,10 @@ export const routerOptions = {
     path: "/o-mne",
     component: _8c42d1a4,
     name: "o-mne"
+  }, {
+    path: "/reference",
+    component: _3f944933,
+    name: "reference"
   }, {
     path: "/svatby",
     component: _1af23e1b,

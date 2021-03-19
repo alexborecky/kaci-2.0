@@ -1,7 +1,9 @@
 <template>
     <nuxt-link :to="link" class="gallery flex column" >
-        <div class="image" :style="{backgroundImage: 'url('+ image +')'}"></div>
-        <h2>{{title}}</h2>
+        <div class="image flex column center">
+            <img :src="image" alt="">
+            <h2>{{title}}</h2>
+        </div>
     </nuxt-link>
 </template>
 
@@ -32,10 +34,18 @@
         background-position: center;
         background-size: cover;
         transition: .3s ease-in-out;
+        img {
+            width: 100%;
+            height: auto;
+            transition: .3s ease-in-out;
+        }
      }
      h2 {
+         position: absolute;
+         opacity: 1;
+         font-size: 40px;
         margin: 8px 0;
-        color: rgba($color: #000000, $alpha: .72);
+        color: rgba($color: #fff, $alpha: .8);
         transition: .3s ease-in-out;
     }
     @media only screen and (max-width: 800px) {
@@ -59,13 +69,16 @@
     }
     &:hover {
         .image {
-            transform: scale(1.02);
+            box-shadow: none;
+            // transform: scale(1.02);
             img {
-                box-shadow: 0 64px 80px -40px rgba($color: #000000, $alpha: .4);
+                opacity: .64;
+                filter: blur(4px);
             }
-        }
-        h2 {
-            color: rgba($color: #000000, $alpha: 1.0);
+            h2 {
+                color: rgba($color: #fff, $alpha: 1.0);
+                opacity: 1;
+            }
         }
         @media only screen and (max-width: 640px) {
             .image {

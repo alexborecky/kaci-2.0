@@ -2,7 +2,10 @@
   <div>
     <sideBar/>
     <Navigation/>
-    <nuxt />
+    <main>
+      <Social/>
+      <nuxt />
+    </main>
   </div>
 </template>
 
