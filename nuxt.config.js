@@ -13,8 +13,7 @@ export default {
       { property: 'og:image', content: 'https://ik.imagekit.io/alexborecky/Kaci/New_Web/fotografie/full-39-min_7MJC8QnfTDz.jpg' },
       { property: 'og:type', content: 'website'},
       { property: 'og:url', content: 'https://jirkovskaphoto.com'},
-      { property: 'og:title', content: 'Jirkovská Photography | Fotografka z Prahy' },
-      { property: 'og:description', content: 'Fotografické portfolio Kateřiny Jirkovské' },
+      { property: 'og:title', content: 'Jirkovská Photography | Terapie focením' },
     ],
     link: [
       { rel: "preconnect", href:"https://fonts.gstatic.com"},
