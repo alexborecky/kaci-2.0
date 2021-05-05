@@ -11,7 +11,7 @@
                 <p>V ceně focení jsou 2 fotografie vytisklé na formát A4.</p>
                 <p class="warning">Je pro mě důležité, dát si před samotným focením čas. Chvíli si společně v klidu popovídat. Poznat se. Nikam nespěchat.</p>
                 <div class="contact">
-                    <p>V případě zájmu <nuxt-link to="/contact">mě kontaktujte<div class="underline"></div></nuxt-link> a domluvíme se.</p>
+                    <p>V případě zájmu <nuxt-link to="/kontakt">mě kontaktujte<div class="underline"></div></nuxt-link> a domluvíme se.</p>
                 </div>
                 <p class="warning">Uvedené ceny se nevztahují na focení svateb. </p>
             </div>
@@ -66,6 +66,9 @@
     }
     .warning {
         margin: 16px 0;
+    }
+    @media (max-width: 800px) {
+        margin-top: 40px;
     }
 }
 

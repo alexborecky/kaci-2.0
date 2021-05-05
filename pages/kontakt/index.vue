@@ -113,6 +113,7 @@
         }
     }
     @media only screen and (max-width: 550px) {
+        margin-top: 60px;
         .about {
             .image {
                 width: 80%;
