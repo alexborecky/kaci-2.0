@@ -9,8 +9,12 @@ export default
             link: '/terapie-focenim'
         },                
         {
-            title: 'Reference',
-            link: '/reference'
+        title: 'Reference',
+        link: '/reference'
+        },                
+        {
+        title: 'Ceník',
+        link: '/cenik'
         },                
         {
             title: 'Kontakt',

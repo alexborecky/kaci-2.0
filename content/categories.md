@@ -12,7 +12,7 @@ cover: [
         title: 'Fotografie'
     },
     {
-        src: 'https://ik.imagekit.io/alexborecky/Kaci/New_Web/cover2_YK_dZg9qR.jpg',
+        src: 'https://ik.imagekit.io/alexborecky/Kaci/New_Web/svatby/full-609-min_K4qfHPgb3QW.jpg',
         link: '/svatby',
         title: 'Svatby'
     },

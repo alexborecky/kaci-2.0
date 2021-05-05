@@ -103,6 +103,7 @@ const OFFSET = 10
   height: 80px;
   z-index: 100;
   position: fixed;
+  top: 0;
   transition: .4s ease-in-out;
   background-color: white;
   @media only screen and (min-width: 960px) {

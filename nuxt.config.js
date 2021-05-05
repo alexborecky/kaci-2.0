@@ -5,17 +5,23 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Jirkovská Photography' || title,
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: 'Fotografické portfolio Kateřiny Jirkovské' },
+      { property: 'og:image', content: 'https://ik.imagekit.io/alexborecky/My__Web/ogImage_vqhS4obQI.png' },
+      { property: 'og:type', content: 'website'},
+      { property: 'og:url', content: 'https://jirkovskaphotography.com'},
+      { property: 'og:title', content: 'Jirkovská Photography | Fotografka z Prahy' },
+      { property: 'og:description', content: 'Fotografické portfolio Kateřiny Jirkovské' },
     ],
     link: [
+      { rel: "preconnect", href:"https://fonts.gstatic.com"},
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { href: 'https://fonts.googleapis.com/css2?family=Italiana&family=Mulish:wght@300;400;600;700;800&display=swap' ,rel: 'stylesheet'},
       { href: 'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap' ,rel: 'stylesheet'},
-      { href: 'https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600;700&display=swap' ,rel: 'stylesheet'},
+      { href: 'https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap' ,rel: 'stylesheet'},
     ],
     script: [
       {
@@ -67,9 +73,9 @@ export default {
   plugins: [
     '~/plugins/uiKit.js',
     // { src: '~/plugins/locomotive.js', ssr: false },
-    { src: '~/plugins/both.js' },
-    { src: '~/plugins/client.js', mode: 'client' },
-    { src: '~/plugins/server.js', mode: 'server' },
+    // { src: '~/plugins/both.js' },
+    // { src: '~/plugins/client.js', mode: 'client' },
+    // { src: '~/plugins/server.js', mode: 'server' },
   ],
   /*
   ** Nuxt.js dev-modules

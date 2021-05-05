@@ -15,9 +15,6 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 import nuxt_plugin_pluginclient_f88f4826 from 'nuxt_plugin_pluginclient_f88f4826' // Source: ./content/plugin.client.js (mode: 'client')
 import nuxt_plugin_pluginserver_2d1c6516 from 'nuxt_plugin_pluginserver_2d1c6516' // Source: ./content/plugin.server.js (mode: 'server')
 import nuxt_plugin_uiKit_b530b6ea from 'nuxt_plugin_uiKit_b530b6ea' // Source: ../plugins/uiKit.js (mode: 'all')
-import nuxt_plugin_both_2a2312c0 from 'nuxt_plugin_both_2a2312c0' // Source: ../plugins/both.js (mode: 'all')
-import nuxt_plugin_client_035ad0d4 from 'nuxt_plugin_client_035ad0d4' // Source: ../plugins/client.js (mode: 'client')
-import nuxt_plugin_server_640c091e from 'nuxt_plugin_server_640c091e' // Source: ../plugins/server.js (mode: 'server')
 
 // Component: <ClientOnly>
 Vue.component(ClientOnly.name, ClientOnly)
@@ -63,7 +60,7 @@ async function createApp(ssrContext, config = {}) {
   // here we inject the router and store to all child components,
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
-    head: {"title":"kaci-photo-2","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":""}],"link":[{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Italiana&family=Mulish:wght@300;400;600;700;800&display=swap","rel":"stylesheet"},{"href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Playfair+Display:wght@400;500;600;700&display=swap","rel":"stylesheet"},{"href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Raleway:wght@300;500;600;700&display=swap","rel":"stylesheet"}],"script":[{"src":"http:\u002F\u002Fajax.googleapis.com\u002Fajax\u002Flibs\u002Fjquery\u002F1.3.2\u002Fjquery.min.js?ver=1.3.2","type":"text\u002Fjavascript"},{"src":"https:\u002F\u002Fcode.jquery.com\u002Fjquery-3.3.1.slim.min.js","type":"text\u002Fjavascript"},{"src":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Fpopper.js\u002F1.14.3\u002Fumd\u002Fpopper.min.js","type":"text\u002Fjavascript"},{"src":"https:\u002F\u002Fstackpath.bootstrapcdn.com\u002Fbootstrap\u002F4.1.3\u002Fjs\u002Fbootstrap.min.js","type":"text\u002Fjavascript"}],"style":[]},
+    head: {"title":"Jirkovská Photography","meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"hid":"description","name":"description","content":"Fotografické portfolio Kateřiny Jirkovské"},{"property":"og:image","content":"https:\u002F\u002Fik.imagekit.io\u002Falexborecky\u002FMy__Web\u002FogImage_vqhS4obQI.png"},{"property":"og:type","content":"website"},{"property":"og:url","content":"https:\u002F\u002Fjirkovskaphotography.com"},{"property":"og:title","content":"Jirkovská Photography | Fotografka z Prahy"},{"property":"og:description","content":"Fotografické portfolio Kateřiny Jirkovské"}],"link":[{"rel":"preconnect","href":"https:\u002F\u002Ffonts.gstatic.com"},{"rel":"icon","type":"image\u002Fx-icon","href":"\u002Ffavicon.ico"},{"href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Italiana&family=Mulish:wght@300;400;600;700;800&display=swap","rel":"stylesheet"},{"href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Playfair+Display:wght@400;500;600;700&display=swap","rel":"stylesheet"},{"href":"https:\u002F\u002Ffonts.googleapis.com\u002Fcss2?family=Raleway:wght@400;500;600&display=swap","rel":"stylesheet"}],"script":[{"src":"http:\u002F\u002Fajax.googleapis.com\u002Fajax\u002Flibs\u002Fjquery\u002F1.3.2\u002Fjquery.min.js?ver=1.3.2","type":"text\u002Fjavascript"},{"src":"https:\u002F\u002Fcode.jquery.com\u002Fjquery-3.3.1.slim.min.js","type":"text\u002Fjavascript"},{"src":"https:\u002F\u002Fcdnjs.cloudflare.com\u002Fajax\u002Flibs\u002Fpopper.js\u002F1.14.3\u002Fumd\u002Fpopper.min.js","type":"text\u002Fjavascript"},{"src":"https:\u002F\u002Fstackpath.bootstrapcdn.com\u002Fbootstrap\u002F4.1.3\u002Fjs\u002Fbootstrap.min.js","type":"text\u002Fjavascript"}],"style":[]},
 
     router,
     nuxt: {
@@ -187,18 +184,6 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_uiKit_b530b6ea === 'function') {
     await nuxt_plugin_uiKit_b530b6ea(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_both_2a2312c0 === 'function') {
-    await nuxt_plugin_both_2a2312c0(app.context, inject)
-  }
-
-  if (process.client && typeof nuxt_plugin_client_035ad0d4 === 'function') {
-    await nuxt_plugin_client_035ad0d4(app.context, inject)
-  }
-
-  if (process.server && typeof nuxt_plugin_server_640c091e === 'function') {
-    await nuxt_plugin_server_640c091e(app.context, inject)
   }
 
   // Lock enablePreview in context

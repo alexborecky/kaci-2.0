@@ -1,28 +1,9 @@
 <template>
     <div class="hero">
         <div class="container">
-            <LocomotiveScroll
-                ref="scroller"
-                :getted-options="{
-                smooth: true,
-                direction: 'horizontal',
-                getDirection: true,
-                smartphone: {
-                    smooth: false,
-                    direction: 'vertical',
-                    gestureDirection: 'vertical',
-                },
-                tablet: {
-                    smooth: true,
-                    direction: 'horizontal',
-                    gestureDirection: 'horizontal',
-                    breakpoint: '1200'
-                },
-                }"
-            >
             <div class="gallery-scroll horizontal flex">
                 <div class="gallery-section" data-scroll-section>
-                    <div class="gallery-content">
+                    <div class="gallery-content flex">
                     <img 
                         v-for="images in images" 
                         :key="images.src"
@@ -33,7 +14,6 @@
                     </div>
                 </div>
             </div> 
-        </LocomotiveScroll>
         </div>
     </div>
 </template>
@@ -53,31 +33,5 @@ import images from '@/assets/images/svatby.js'
 <style lang="scss" scoped>
 
 @import '@/assets/scss/locomotive.scss';
-
-.gallery-scroll {
-    width: 320vw;
-    @media only screen and (max-width: 1440px) {
-        width: 440vh;
-    }
-    @media only screen and (max-width: 640px) {
-        height: 300vh;
-    }
-}
-
-.js-locomotive {
-    position: realtive;
-}
-
-img {
-    height: 100%;
-    margin-right: 80px;
-    transform: none !important;
-    @media only screen and (max-width: 640px) {
-        width: 100%;
-        height: auto;
-        margin-right: 0;
-        margin: 16px 0;
-    }
-}
 
 </style>

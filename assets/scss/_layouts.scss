@@ -1,6 +1,9 @@
 .hero {
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
+    @media (max-width: 550px) {
+        min-height: 90vh;
+    }
 }
 
 .container {
@@ -50,3 +53,46 @@
           display: none;
       }
   }
+
+  .js-locomotive {
+    position: realtive;
+}
+
+.gallery-scroll {
+    height: auto;
+    flex-flow: column;
+    .gallery-content {
+        flex-flow: column;
+        margin-right: 0;
+        width: 100%;
+        img {
+            max-height: 140vh;
+            margin: 40px 0;
+            transform: none !important;
+            max-width: 100%;
+            height: auto;
+            &:first-child {
+                margin-top: 40px !important;
+            }
+            &:last-child {
+                margin-bottom: 120px;
+            }
+            &:nth-child(odd) {
+                align-self: flex-start;
+            }
+            &:nth-child(even) {
+                align-self: flex-end;
+            }
+            @media only screen and (max-width: 640px) {
+                width: 100%;
+                height: auto;
+                margin-right: 0;
+                margin: 16px 0;
+            }
+        }
+    }
+}
+
+.half {
+    width: 50%;
+}

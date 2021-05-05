@@ -73,10 +73,11 @@ const OFFSET = 60
 <style lang="scss" scoped>
 
 .navigation {
-    position: fixed;
+    position: sticky;
     height: 80px;
+    margin-top: 40px;
     z-index: 1000 !important;
-    top: 2vh;
+    top: 0;
     background-color: white;
     .container {
         height: 100%;
@@ -145,7 +146,7 @@ a.nuxt-link-exact-active {
 }
 
 .navigation.hidden-navbar {
-  transform: translate3d(0, -120%, 0);
+  transform: translate3d(0, -120px, 0);
 }
 
 </style>

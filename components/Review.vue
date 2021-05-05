@@ -37,6 +37,7 @@
         margin-left: 40px;
         p {
             max-width: 600px;
+            opacity: .8;
         }
         h2 {
             margin-bottom: 16px;

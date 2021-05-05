@@ -1,25 +1,13 @@
 <template>
     <div class="hero">
         <div class="container">
-            <LocomotiveScroll
-                ref="scroller"
-                :getted-options="{
-                smooth: true,
-                direction: 'horizontal',
-                getDirection: true,
-                smartphone: {
-                    smooth: false,
-                    direction: 'vertical',
-                    gestureDirection: 'vertical',
-                },
-                tablet: {
-                    smooth: true,
-                    direction: 'vertical',
-                    gestureDirection: 'vertical',
-                },
-                }"
-            >
-            <div class="gallery-scroll horizontal flex">
+            <therapy-block 
+                v-for="therapy in therapy.therapy" :key="therapy.images"
+                :image="therapy.src"
+                :name="therapy.name"
+                :content="therapy.content"
+            />
+            <!-- <div class="gallery-scroll horizontal flex">
                 <div class="gallery-section" data-scroll-section>
                     <div class="gallery-content">
                     <img 
@@ -31,8 +19,7 @@
                     />
                     </div>
                 </div>
-            </div> 
-        </LocomotiveScroll>
+            </div>  -->
         </div>
     </div>
 </template>
@@ -41,6 +28,10 @@
 import images from '@/assets/images/terapie.js'
 
     export default {
+        async asyncData({$content}) {
+            const therapy = await $content('therapy').fetch();
+            return {therapy}
+        },
         data () {
             return {
                 images: images
@@ -53,23 +44,18 @@ import images from '@/assets/images/terapie.js'
 
 @import '@/assets/scss/locomotive.scss';
 
-.gallery-scroll {
-    width: 320vw;
-}
-
-.js-locomotive {
-    position: realtive;
-}
-
-img {
-    height: 100%;
-    margin-right: 80px;
-    transform: none !important;
-    @media only screen and (max-width: 640px) {
-        width: 100%;
-        height: auto;
-        margin-right: 0;
-        margin: 16px 0;
+.therapy {
+    .half {
+        img {
+            width: 100%;
+        }
+    }
+    .text {
+        padding: 80px;
+        justify-content: center;
+        h2 {
+            margin: 24px 0;
+        }
     }
 }
 

@@ -7,7 +7,7 @@
                 </div>
                 <div class="content">
                     <h1>Kateřina Jirkovská</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, distinctio. Rerum eos voluptas ratione molestias dolores officia deserunt magni quo accusantium voluptatem quae, consequuntur, impedit porro iure, aperiam voluptates quisquam.</p>
+                    <p>Focení je pro mě vášen, realizace, svoboda, láska. Těší mě skrz focení propojovat svůj svět s fotografovaným, být sama sebou, vyjádřit se a vyjádřit tím tak i ostatní. Svět kolem mě. Potkávat se s lidmi a poslouchat jejich příběhy. Zachytit pak jejich příběh, cestu nebo momentální rozpoložení.</p>
                     <div class="contact-info flex column flex-left">
                         <p></p>
                         <a href=""><h2>info@jirkovskaphoto.com</h2></a>
@@ -33,7 +33,7 @@
 <style lang="scss" scoped>
 
 .container {
-    min-height: 100vh;
+    min-height: 80vh;
     .about {
         width: 100%;
         align-items: center;

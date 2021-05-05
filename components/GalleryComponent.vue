@@ -1,9 +1,8 @@
 <template>
-    <nuxt-link :to="link" class="gallery flex column" >
-        <div class="image flex column center">
-            <img :src="image" alt="">
-            <h2>{{title}}</h2>
+    <nuxt-link :to="link" class="gallery flex column center">
+        <div class="image flex column center" :style="{backgroundImage: 'url('+ image +')'}">
         </div>
+        <h2>{{title}}</h2>
     </nuxt-link>
 </template>
 
@@ -21,22 +20,20 @@
 <style lang="scss" scoped>
 
 .gallery {
-    height: 70vh;
     width: 30%;
-    transform: none !important;
-    // margin-right: 40px;
-    justify-content: space-between;
-    align-items: flex-start;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
      .image {
         width: 100%;
-        height: 90%;
+        height: 100%;
         box-shadow: 0 32px 120px 0 rgba($color: #000000, $alpha: .4);
         background-position: center;
         background-size: cover;
         transition: .3s ease-in-out;
         img {
-            width: 100%;
-            height: auto;
+            max-width: 100%;
+            height: 100%;
             transition: .3s ease-in-out;
         }
      }
@@ -45,11 +42,11 @@
          opacity: 1;
          font-size: 40px;
         margin: 8px 0;
-        color: rgba($color: #fff, $alpha: .8);
+        color: rgba($color: #fff, $alpha: 1);
         transition: .3s ease-in-out;
     }
     @media only screen and (max-width: 800px) {
-        height: 60vh;
+        height: 80vh;
         width: 100%;
         margin-right: 0;
         margin-top: 40px;
@@ -64,17 +61,15 @@
         }
         h2 {
             margin: 8px 0;
-            color: rgba($color: #000000, $alpha: .72);
+            color: rgba($color: #fff, $alpha: 1);
         }
     }
     &:hover {
         .image {
             box-shadow: none;
             // transform: scale(1.02);
-            img {
                 opacity: .64;
                 filter: blur(4px);
-            }
             h2 {
                 color: rgba($color: #fff, $alpha: 1.0);
                 opacity: 1;
