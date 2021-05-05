@@ -36,6 +36,14 @@ import images from '@/assets/images/terapie.js'
             return {
                 images: images
             }
+        },
+        head: {
+            title: 'Jirkovská Photography | Terapie focením',
+            meta: [
+                { property: 'og:image', content: 'https://ik.imagekit.io/alexborecky/Kaci/New_Web/Terapie/full-23-min_0ZluoJbZU.jpg' },
+                {
+                }
+            ]
         }
     }
 </script>
