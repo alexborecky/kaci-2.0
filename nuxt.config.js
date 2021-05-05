@@ -9,7 +9,6 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Fotografické portfolio Kateřiny Jirkovské' },
       { property: 'og:image', content: 'https://ik.imagekit.io/alexborecky/Kaci/New_Web/fotografie/full-39-min_7MJC8QnfTDz.jpg' },
       { property: 'og:type', content: 'website'},
       { property: 'og:url', content: 'https://jirkovskaphoto.com'},
